@@ -16,7 +16,7 @@ spec:
       - name: html-demo
         image: ranimatapari/html-demo:latest
         ports:
-        - containerPort: 85
+        - containerPort: 99
 ---
 apiVersion: v1
 kind: Service
@@ -27,6 +27,6 @@ spec:
   selector:
     app: html-demo
   ports:
-  - port: 90
-    targetPort: 90
+  - port: 98
+    targetPort: 98
     nodePort: 30010
